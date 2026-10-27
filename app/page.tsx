@@ -1,8 +1,8 @@
 const projectUrl = "https://github.com/H-F07/hugo-faure-dossiers-pros-DWWM";
 const liveUrl = "https://hugo-faure-dossiers-pros-dwwm.vercel.app";
 const email = "hugo.faure07@icloud.com";
-const phoneDisplay = "+33 7 62 37 74 78";
-const phoneLink = "+33762377478";
+const phoneDisplay = "+33 07 62 37 74 78";
+const phoneLink = "+33 07 62 37 74 78";
 
 const skills = [
   ["React / Next.js", "Utilisés dans mon projet"],
@@ -207,14 +207,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="glass lift flex flex-col justify-between rounded-[28px] p-7 md:col-span-2">
-            <p className="eyebrow">Stack</p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {["Next.js", "React", "TypeScript", "Tailwind", "Supabase"].map((t) => (
-                <span key={t} className="chip">{t}</span>
-              ))}
-            </div>
-          </div>
+          <div className="glass lift flex flex-col rounded-[28px] p-7 md:col-span-2">
+          <p className="eyebrow">Stack</p>
+         <div className="mt-5 flex flex-1 flex-col gap-3">
+        {["Next.js", "React", "TypeScript", "Tailwind", "Supabase"].map((t) => (
+        <span
+        key={t}
+        className="flex flex-1 items-center justify-center rounded-2xl border border-blue-300/30 bg-blue-500/10 px-4 py-3 text-xl font-black text-blue-100 sm:text-2xl"
+      >
+        {t}
+      </span>
+     ))}
+    </div>
+   </div>
 
           <div className="glass lift rounded-[28px] p-7 md:col-span-2">
             <p className="text-5xl font-black text-white">2</p>
